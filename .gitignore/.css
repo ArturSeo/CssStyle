@@ -1,0 +1,108 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body{
+    background: #5e5e5e;
+}
+
+.layered-container{
+    transform-style: preserve-3d;
+    transition: transform 1800ms ease 0s;
+    transform: rotateX(50deg) rotateY(0deg) rotateZ(-15deg);
+    position: relative;
+    display: block;
+    width: 621px;
+    height: 374px;
+    margin: 95px auto 60px;
+}
+
+.w-container::before, .w-container::after {
+    content: " ";
+    display: table;
+}
+
+..w-container::after{
+    clear: both;
+}
+
+.layer-1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.layer-2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.layer-3{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.layer-4{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.row1{
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.example.teal{
+    background-color: #00b3b3;
+    color: #fff;
+}
+.example-body.layer-perspective {
+    -webkit-perspective: 1600px;
+    perspective: 1600px;
+    -webkit-perspective-origin: 20% 50%;
+    perspective-origin: 20% 50%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.example-body
+{
+    position: relative; 
+    overflow: hidden;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .09), transparent);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .09), transparent);
+}
+.w-container::before, .w-container::after {
+    content: " ";
+    display: table;
+}
